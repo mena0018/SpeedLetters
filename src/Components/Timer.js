@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import "../Styles/css/Timer.css";
 
 
-export default function Timer() {
+export default function Timer({score}) {
   const [time, setTime] = useState(60);
-  const [score, setScore] = useState(0);
 
   useEffect(() => {
     let timer = setInterval(() => {
