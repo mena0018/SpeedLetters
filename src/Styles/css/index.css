@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Space+Grotesk&display=swap");
+/* Variables Font */
+/* Variables Colors */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ced3e0;
+  font-family: "Space Grotesk", sans-serif;
+  color: #1C1939;
+}
+
+/*# sourceMappingURL=index.css.map */

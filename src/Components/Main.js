@@ -65,25 +65,29 @@ export default function Main() {
 
   return (
     <>   
-    <Timer score={score}/>
+        <Timer score={score}/>
 
-    {sentenceToWrite.length > 0 &&
-      <div className="container">
-         <div className={`sentence-to-write ${isCorrect ? 'correct' : 'incorrect'}`}>
-            { sentenceToWrite.map((carac, index) => (
-                <span key={index}>{carac}</span>
-              ))
-            }    
-         </div>
+        {sentenceToWrite.length > 0 &&
+        <div className="container">
+            <div className={`sentence-to-write ${isCorrect ? 'correct' : 'incorrect'}`}>
+                { sentenceToWrite.map((carac, index) => (
+                    <span key={index}>{carac}</span>
+                ))
+                }    
+            </div>
 
-         <textarea value={areaValue}
-                   onChange={handleChange}
-                   autoFocus
-                   onInput={testSentence}
-                   className="test-sentence">
-         </textarea>
-      </div>
-    }
+            <textarea value={areaValue}
+                    onChange={handleChange}
+                    autoFocus
+                    onInput={testSentence}
+                    className="test-sentence">
+            </textarea>
+        </div>
+        }
+
+        <div className="retry">
+            <button onClick={() => window.location.reload()}>Rejouer</button>
+        </div> 
     </>
   )
 }
